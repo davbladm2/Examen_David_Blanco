@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_actividad1_b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dm2.examen_david_blanco.Actividad1B">
+
+    <TextView
+        android:id="@+id/textViewSeleccionCandidato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccionCandidato"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/textViewNombreSele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="@string/nombre"
+        android:layout_below="@id/textViewSeleccionCandidato"/>
+
+    <TextView
+        android:id="@+id/textViewProvinciaSele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="@string/provincia"
+        android:layout_below="@id/textViewNombreSele"/>
+
+    <TextView
+        android:id="@+id/textViewSexoSele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="@string/sexo"
+        android:layout_below="@id/textViewProvinciaSele"/>
+
+    <TextView
+        android:id="@+id/textViewConocimientosSele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="@string/conocimientos"
+        android:layout_below="@id/textViewSexoSele"/>
+
+    <Button
+        android:id="@+id/buttonAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonAceptar"
+        android:onClick="comprobar"
+        android:layout_below="@id/textViewConocimientosSele"/>
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonCancelar"
+        android:layout_toEndOf="@id/buttonAceptar"
+        android:onClick="comprobar"
+        android:layout_below="@id/textViewConocimientosSele"/>
+
+</RelativeLayout>

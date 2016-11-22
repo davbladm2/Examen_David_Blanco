@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="600px">
+
+    <TableRow>
+        <Button
+            android:id="@+id/ButtonActividad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pulsar"
+            android:text="@string/actividad1"/>
+        <Button
+            android:id="@+id/ButtonActividad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pulsar"
+            android:text="@string/actividad2"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/ButtonActividad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pulsar"
+            android:text="@string/actividad3"/>
+        <Button
+            android:id="@+id/ButtonSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pulsar"
+            android:text="@string/salir"/>
+    </TableRow>
+
+</TableLayout>
